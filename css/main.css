@@ -147,13 +147,15 @@ h2 {
 
 div.hero {
     background-image: url(../img/encabezado.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    height: 60vh;
 }
 
 @media only screen and (min-width: 768px) {
     div.hero {
         height: 100vh;
         background-position: top center;
-        background-size: cover;
     }
 }
 
