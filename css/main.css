@@ -156,13 +156,13 @@ h2 {
 
 @media only screen and (min-width: 768px) {
     .contenedor {
-        width: 94%;
+        width: 98%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .contenedor {
-        width: 98%;
+        width: 90%;
     }
 }
 
@@ -285,6 +285,77 @@ h1.nombre-sitio {
         margin: 0;
         line-height: 1;
     }
+}
+
+
+/*************************************
+***************BARRA****************
+*************************************/
+
+div.barra {
+    background-color: #353535;
+    padding: 20px 0;
+}
+
+div.logo {
+    width: 80%;
+}
+
+div.logo img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    div.logo {
+        width: 33%;
+        float: left;
+    }
+}
+
+
+/*************************************
+*******NAVEGACION PRINCIPAL***********
+*************************************/
+
+nav.navegacion-principal {
+    display: none;
+}
+
+nav.navegacion-principal a {
+    font-family: var(--oswald);
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+nav.navegacion-principal a:hover {
+    color: #fe4918;
+}
+
+@media only screen and (min-width: 768px) {
+    nav.navegacion-principal {
+        width: 66.6%;
+        float: right;
+        text-align: right;
+        display: block;
+    }
+    nav.navegacion-principal a {
+        margin-right: 10px;
+        display: inline-block;
+        padding: 25px 10px;
+    }
+}
+
+nav.navegacion-principal a:last-child {
+    border: 2px solid #fe4918;
+    color: #fe4918;
+}
+
+nav.navegacion-principal a:last-child:hover {
+    color: white;
 }
 
 
