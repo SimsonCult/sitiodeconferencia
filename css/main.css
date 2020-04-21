@@ -150,13 +150,13 @@ h2 {
 
 @media only screen and (min-width: 480px) {
     .contenedor {
-        width: 90%;
+        width: 96%;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .contenedor {
-        width: 98%;
+        width: 90%;
     }
 }
 
@@ -298,7 +298,9 @@ div.barra {
 }
 
 div.logo {
-    width: 80%;
+    float: left;
+    width: 18rem;
+    margin-top: 15px;
 }
 
 div.logo img {
@@ -308,7 +310,6 @@ div.logo img {
 @media only screen and (min-width: 768px) {
     div.logo {
         width: 33%;
-        float: left;
     }
 }
 
@@ -316,10 +317,6 @@ div.logo img {
 /*************************************
 *******NAVEGACION PRINCIPAL***********
 *************************************/
-
-nav.navegacion-principal {
-    display: none;
-}
 
 nav.navegacion-principal a {
     font-family: var(--oswald);
@@ -329,6 +326,14 @@ nav.navegacion-principal a {
     text-transform: uppercase;
     font-weight: bold;
     transition: all .3s ease-in-out;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav.navegacion-principal a:first-child {
+    margin-top: 85px;
 }
 
 nav.navegacion-principal a:hover {
@@ -343,9 +348,15 @@ nav.navegacion-principal a:hover {
         display: block;
     }
     nav.navegacion-principal a {
-        margin-right: 10px;
         display: inline-block;
         padding: 25px 10px;
+        width: auto;
+        /* display: inline;*/
+        text-align: center;
+        margin: 0 10px 0 0;
+    }
+    nav.navegacion-principal a:first-child {
+        margin-top: 0;
     }
 }
 
@@ -356,6 +367,36 @@ nav.navegacion-principal a:last-child {
 
 nav.navegacion-principal a:last-child:hover {
     color: white;
+}
+
+
+/*************************************
+*************MENU MOVIL***************
+*************************************/
+
+div.menu-movil {
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+div.menu-movil:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    div.menu-movil {
+        display: none;
+    }
+}
+
+div.menu-movil span {
+    height: .8rem;
+    margin-bottom: 6px;
+    background-color: white;
+    display: block;
 }
 
 
