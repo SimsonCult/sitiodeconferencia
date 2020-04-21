@@ -213,6 +213,7 @@ div.informacion-evento {
     text-align: center;
     color: white;
     margin: 0 auto;
+    margin-top: 4rem;
     padding-top: 20px;
 }
 
@@ -281,6 +282,7 @@ h1.nombre-sitio {
 
 @media only screen and (min-width: 768px) {
     h1.nombre-sitio {
+        margin-top: 0;
         font-size: 8.5vw;
         margin: 0;
         line-height: 1;
