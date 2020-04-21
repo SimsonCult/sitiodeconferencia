@@ -569,10 +569,7 @@
         -moz-filter: grayscale(0);
         -o-filter: grayscale(0);
         -ms-filter: grayscale(0);
-        -webkit-scale: 1.2;
-        -moz-scale: 1.2;
-        -o-scale: 1.2;
-        -ms-scale: 1.2;
+        scale: 1.1;
     }
     
     div.invitado p {
