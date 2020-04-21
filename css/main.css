@@ -212,12 +212,23 @@ div.informacion-evento p i {
 }
 
 p.fecha {
+    font-size: 4vw !important;
     float: left;
 }
 
 p.ciudad {
+    font-size: 4vw !important;
     float: right;
     text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+    p.fecha {
+        font-size: 1em !important;
+    }
+    p.ciudad {
+        font-size: 1em !important;
+    }
 }
 
 p.slogan {
@@ -230,7 +241,7 @@ p.slogan span {
 }
 
 h1.nombre-sitio {
-    font-size: 5.9vw;
+    font-size: 10vw;
     text-transform: uppercase;
     font-family: var(--ptsansserif);
 }
