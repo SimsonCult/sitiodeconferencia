@@ -15,12 +15,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 
 /*
  * Remove text-shadow in selection highlight:
@@ -199,11 +193,16 @@ h3 {
     padding: 10px 40px;
     color: white;
     text-transform: uppercase;
-    font-weight: var(--oswald);
+    font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
     margin-top: 20px;
-    display: inline-block;
+    display: block;
+    transition: all .3s ease;
+}
+
+.boton:hover {
+    background-color: #c43710;
 }
 
 .float-rigth {
@@ -500,9 +499,6 @@ div.programa-evento h2 {
 @media only screen and (min-width: 992px) {
     div.programa-evento {
         width: 50%;
-    }
-    div.info-curso {
-        display: block;
     }
 }
 
