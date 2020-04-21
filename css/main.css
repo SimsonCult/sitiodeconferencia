@@ -461,7 +461,7 @@ section.programa {
 div.contenedor-video {
     height: 0;
     max-width: 100%;
-    padding-bottom: 360px;
+    padding-bottom: 56.25%;
     overflow: hidden;
     position: relative;
 }
@@ -471,6 +471,13 @@ div.contenedor-video video {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    div.contenedor-video {
+        height: auto;
+    }
 }
 
 div.contenido-programa {
@@ -491,15 +498,35 @@ div.programa-evento h2 {
     margin-top: 8px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     div.programa-evento {
-        width: 70%;
+        width: 100%;
+    }
+    div.info-curso {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .boton {
+        height: 40px;
+        grid-row: 2/3;
+        grid-column: 5/6;
+    }
+    .evento1 {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .evento2 {
+        grid-row: 1/2;
+        grid-column: 3/5;
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1400px) {
     div.programa-evento {
         width: 50%;
+    }
+    div.info-curso {
+        display: block;
     }
 }
 
@@ -526,7 +553,7 @@ div.detalle-evento p i {
     margin-right: 10px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     nav.menu-programa {
         display: table;
     }
