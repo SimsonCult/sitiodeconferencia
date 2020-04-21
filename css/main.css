@@ -180,7 +180,7 @@ div.hero {
 
 @media only screen and (min-width: 768px) {
     div.hero {
-        height: 100vh;
+        height: 85.5vh;
         background-position: top center;
     }
 }
@@ -317,6 +317,10 @@ div.logo img {
 /*************************************
 *******NAVEGACION PRINCIPAL***********
 *************************************/
+
+nav.navegacion-principal {
+    display: none;
+}
 
 nav.navegacion-principal a {
     font-family: var(--oswald);
