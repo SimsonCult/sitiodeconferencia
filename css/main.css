@@ -197,7 +197,7 @@ h3 {
     text-decoration: none;
     font-size: 1.2em;
     margin-top: 20px;
-    display: block;
+    display: inline-block;
     transition: all .3s ease;
 }
 
@@ -685,6 +685,38 @@ p.numero {
     font-size: 4em;
     display: block;
     margin: 0 0 10px 0;
+}
+
+
+/*************************************************************************
+**********************Lista de Precio**************************************
+***************************************************************************/
+
+ul.lista-precios>li {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.lista-precios>li {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+div.tabla-pecio {
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+div.tabla-pecio ul li {
+    font-family: var(--ptsansserif);
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px;
 }
 
 
