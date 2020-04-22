@@ -221,6 +221,15 @@ h3 {
     background-color: #c43710;
 }
 
+.transparente {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.transparente:hover {
+    border: 2px solid #fe4918;
+}
+
 .float-rigth {
     float: right;
 }
@@ -842,6 +851,59 @@ footer.info-testimonial cite span {
     display: block;
     text-transform: none;
     margin-top: 5px;
+}
+
+
+/*****************************************************************
+***********************newsletter*********************************
+*****************************************************************/
+
+div.newsletter {
+    position: relative;
+    height: auto;
+}
+
+div.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: "";
+}
+
+div.newsletter .contenido {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+div.newsletter .contenido p {
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
+
+div.newsletter .contenido h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: var(--ptsansserif);
+}
+
+
+/*****************************************************************
+***********************cuenta regresiva***************************
+*****************************************************************/
+
+div.cuenta-regresiva ul li {
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    div.cuenta-regresiva ul li {
+        float: left;
+        width: 25%;
+    }
 }
 
 
