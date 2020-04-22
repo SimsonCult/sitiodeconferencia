@@ -907,6 +907,57 @@ div.cuenta-regresiva ul li {
 }
 
 
+/*****************************************************************
+*****************************FOOTER*******************************
+*****************************************************************/
+
+footer.site-footer {
+    margin-top: 20px;
+    padding-top: 40px;
+    background-color: #353535;
+}
+
+footer .contenedor>div {
+    color: white;
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    footer .contenedor>div {
+        width: 33.3%;
+        float: left;
+    }
+}
+
+footer h3 {
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    margin-bottom: 20px;
+}
+
+footer h3 span {
+    color: #fe4918;
+}
+
+footer .ultimos-tweets li {
+    margin-bottom: 10px;
+}
+
+footer nav.redes-sociales {
+    text-align: center;
+}
+
+p.copyright {
+    background-color: #2e2e2e;
+    padding: 20px 0;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 /* ==========================================================================
 Helper classes
 ========================================================================== */
