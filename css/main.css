@@ -103,6 +103,14 @@ Browser Upgrade Prompt
 Author's custom styles
 ========================================================================== */
 
+
+/* mapa*/
+
+div.mapa {
+    height: 420px;
+    background-color: grey;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -163,19 +171,19 @@ h3 {
 
 @media only screen and (min-width: 480px) {
     .contenedor {
-        width: 96%;
+        width: 98%;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .contenedor {
-        width: 90%;
+        width: 96%;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
     .contenedor {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -189,6 +197,7 @@ h3 {
 }
 
 .boton {
+    font-family: var(--oswald);
     background-color: #fe4918;
     padding: 10px 40px;
     color: white;
@@ -199,6 +208,13 @@ h3 {
     margin-top: 20px;
     display: inline-block;
     transition: all .3s ease;
+    border: 2px solid #fe4918;
+}
+
+.boton.hollow,
+.boton.hollow:hover {
+    background-color: white;
+    color: #fe4918;
 }
 
 .boton:hover {
@@ -669,7 +685,6 @@ ul.resumen-evento li {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
     font-family: var(--oswald);
     font-size: 24px;
 }
@@ -694,7 +709,7 @@ p.numero {
 ***************************************************************************/
 
 ul.lista-precios>li {
-    padding: 10px;
+    padding: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -709,6 +724,13 @@ div.tabla-pecio {
     background-color: white;
     padding: 40px 0;
     text-align: center;
+    transition: all .3s ease;
+}
+
+div.tabla-pecio:hover {
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
 }
 
 div.tabla-pecio ul li {
@@ -720,10 +742,29 @@ div.tabla-pecio ul li {
     line-height: 26px;
 }
 
+.fa,
+.fas,
+div.tabla-pecio ul li::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smootithing: antialiased;
+    content: "\f00c";
+}
+
 div.tabla-pecio h3 {
     font-family: var(--oswald);
     font-size: 16px;
     text-transform: uppercase;
+}
+
+div.tabla-pecio p.numero {
+    color: black;
+    margin: 20px 0;
 }
 
 
