@@ -768,6 +768,41 @@ div.tabla-pecio p.numero {
 }
 
 
+/*****************************************************************
+********************testimoniales*********************************
+*****************************************************************/
+
+div.testimoniales {
+    padding-bottom: 20px;
+}
+
+div.testimonial {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    div.testimonial {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+blockquote {
+    background-color: white;
+    border: 1px solid #a57070;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+
+blockquote p {
+    text-align: justify!important;
+    font-size: 1em !important;
+    font-family: var(--ptsansserif);
+    padding: 0 20px 0 40px;
+}
+
+
 /* ==========================================================================
 Helper classes
 ========================================================================== */
@@ -912,8 +947,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     pre {
         white-space: pre-wrap !important;
     }
-    pre,
-    blockquote {
+    pre {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
