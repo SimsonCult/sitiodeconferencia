@@ -799,7 +799,21 @@ blockquote p {
     text-align: justify!important;
     font-size: 1em !important;
     font-family: var(--ptsansserif);
-    padding: 0 20px 0 40px;
+    padding: 0 20px 0 50px;
+}
+
+blockquote p::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f10d";
+    position: absolute;
+    left: 7px;
+    top: 18px;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #fe4918;
 }
 
 
