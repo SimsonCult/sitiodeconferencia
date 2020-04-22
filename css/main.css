@@ -685,6 +685,7 @@ p.numero {
     font-size: 4em;
     display: block;
     margin: 0 0 10px 0;
+    font-family: var(--oswald);
 }
 
 
@@ -717,6 +718,12 @@ div.tabla-pecio ul li {
     text-transform: uppercase;
     color: #868686;
     line-height: 26px;
+}
+
+div.tabla-pecio h3 {
+    font-family: var(--oswald);
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 
