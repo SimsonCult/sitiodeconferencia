@@ -18,7 +18,7 @@
         }).addTo(map);
 
         L.marker([-51.634147, -69.203369]).addTo(map)
-            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .bindPopup('Mira Donde Apunta la flecha<br> ya voy mejorandoXD.')
             .openPopup();
 
 
