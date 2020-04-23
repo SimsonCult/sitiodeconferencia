@@ -1,5 +1,11 @@
 (function() {
     'use strict';
+    var preciodia = 30,
+        precio2dias = 45,
+        preciocompleto = 50,
+        precioCamisa = 10,
+        precioEtiquetas = 2,
+        descuentoCamisas = .93;
     var regalo = document.getElementById("regalo");
     document.addEventListener('DOMContentLoaded', function() {
 
@@ -20,6 +26,11 @@
         var btnRegisto = document.getElementById("btnRegistro");
         var resultado = document.getElementById("listaProductos");
 
+        //extras
+
+        var camisasElegidas = document.getElementById("camisaEvento");
+        var etiquetasElejidas = document.getElementById("etiquetas");
+
         calcular.addEventListener("click", calcularMontos);
 
         function calcularMontos(event) {
@@ -28,7 +39,39 @@
                 alert("Debes elegir un regalo");
                 regalo.focus();
             } else {
-                console.log("ya elegiste regalo")
+                var boletosDia = paseDia.value,
+                    boleto2Dias = pase2Dias.value,
+                    boletoCompleto = paseCompleto.value,
+                    camisaEvento = camisasElegidas.value,
+                    etiquetas = etiquetasElejidas.value;
+
+                var totalPagar = (boletosDia * preciodia) + (boleto2Dias * precio2dias) + (boletoCompleto * preciocompleto) + ((camisaEvento * precioCamisa) * descuentoCamisas) + (etiquetas * precioEtiquetas);
+
+                var listadoProductos = [];
+
+                if (boletosDia >= 1) {
+                    listadoProductos.push(boletosDia + " Pase/es por dia.");
+                }
+                if (boleto2Dias >= 1) {
+                    listadoProductos.push(boleto2Dias + " Pase/es por 2 dias.");
+                }
+                if (boletoCompleto >= 1) {
+                    listadoProductos.push(boletoCompleto + " Pase/es Completo.");
+                }
+                if (camisaEvento >= 1) {
+                    listadoProductos.push(camisaEvento + " Camisa/as.");
+                }
+                if (etiquetas >= 1) {
+                    listadoProductos.push(etiquetas + " Etiqueta/as.");
+                }
+
+                console.log(listadoProductos)
+
+
+
+
+
+
             }
         }
 
