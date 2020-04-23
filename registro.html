@@ -215,6 +215,45 @@
             </div>
             <!--#eventos-->
 
+
+            <div id="resumen" class="resumen clearfix">
+                <h3>Pagos y Extras</h3>
+                <div class="caja clearfix">
+                    <div class="extras">
+                        <div class="orden">
+                            <label for="camisaEvento">Camisa de evento $10 <small>(Promocion 7% Descuento)</small></label>
+                            <input type="number" name="camisaEvento" id="camisaEvento" min="0" size="3" placeholder="0">
+                        </div>
+                        <div class="orden">
+                            <label for="etiquetas">Camisa de evento $2 <small>(Html5 Css3 Javascript)</small></label>
+                            <input type="number" name="etiquetas" id="etiquetas" min="0" size="3" placeholder="0">
+                        </div>
+                        <div class="orden">
+                            <label for="regalo">Seleccione un regalo</label>
+                            <select name="regalo" id="regalo" required>
+                                <option value="">---Seleccione un regalo---</option>
+                                <option value="ETI">Etiquetas de regalo</option>
+                                <option value="PUL">Pulcera</option>
+                                <option value="PLU">Pluma</option>
+                            </select>
+                        </div>
+                        <input type="button" name="calcular" id="calcular" class="boton" value="Calcular">
+                    </div>
+                    <div class="total">
+                        <p>Resumen</p>
+                        <div id="listaProductos">
+
+                        </div>
+                        <p>Total:</p>
+                        <div id="sumaTotal">
+
+                        </div>
+                        <input type="submit" name="btnRegistro" id="btnRegistro" class="boton" value="Pagar">
+                    </div>
+                </div>
+
+            </div>
+
         </form>
     </section>
 
