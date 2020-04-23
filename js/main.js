@@ -32,9 +32,11 @@
 
 
         calcular.addEventListener("click", calcularMontos);
-        paseDia.addEventListener("blur", mostrarDias);
-        pase2Dias.addEventListener("blur", mostrarDias);
-        paseCompleto.addEventListener("blur", mostrarDias);
+        paseDia.addEventListener("load", mostrarDias);
+        pase2Dias.addEventListener("load", mostrarDias);
+        paseCompleto.addEventListener("load", mostrarDias);
+
+        setInterval(mostrarDias, 10);
 
         function calcularMontos(event) {
             event.preventDefault();
@@ -112,6 +114,7 @@
             }
 
         }
+
 
     });
 
