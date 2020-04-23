@@ -968,9 +968,13 @@ form.registro h3 {
     margin: 20px 0 0 0;
 }
 
-fomr.registro label {
+form.registro label {
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+form.registro div.campo label {
+    padding-left: 40%;
 }
 
 div#datosUsuarios input {
@@ -1052,10 +1056,44 @@ div.resumen p {
     text-transform: uppercase;
 }
 
-div.resumen div.extras {
-    float: left;
-    width: 50%;
+@media only screen and (min-width: 768px) {
+    div.resumen div.extras {
+        float: left;
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+div.resumen div.extras div.orden {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+div.extras div.orden input {
+    margin: 10px 0 0 0;
+    width: 80%;
+}
+
+div.extras div.orden select {
+    width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    div.extras div.orden input {
+        width: 45%;
+    }
+    div.extras div.orden select {
+        width: 45%;
+    }
+}
+
+div.resumen div.total {
     padding: 30px;
+}
+
+div.resumen input {
+    display: block;
+    margin: 10px auto;
 }
 
 
