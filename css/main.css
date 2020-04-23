@@ -1045,6 +1045,20 @@ div.paquetes div.tabla-pecio input {
 }
 
 
+/* Pagos y extras*/
+
+div.resumen p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+div.resumen div.extras {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+
 /* ==========================================================================
 Helper classes
 ========================================================================== */
