@@ -11,18 +11,16 @@
 
 
         //campos datos usuarios
-        var nombre = document.getElementById("nombre");
-        var apellido = document.getElementById("apellido");
-        var email = document.getElementById("email");
+        $('#nombre').on("blur", validarCampos);
+        $('#apellido').on("blur", validarCampos);
+        $('#email').on("blur", validarCampos);
 
         //campo pases
-        var paseDia = document.getElementById("paseDia");
-        var pase2Dias = document.getElementById("pase2Dias");
-        var paseCompleto = document.getElementById("paseCompleto");
+        $('paseDia').on("load", mostrarDias);
+        $('pase2Dias').on("load", mostrarDias);
+        $('paseCompleto').on("load", mostrarDias);
 
         //botones y divs
-        var calcular = document.getElementById("calcular");
-        var divError = document.getElementById("error");
         var btnRegisto = document.getElementById("btnRegistro");
         var lista_Productos = document.getElementById("listaProductos");
         var sumaTotal = document.getElementById("sumaTotal");
@@ -32,24 +30,18 @@
         var etiquetasElejidas = document.getElementById("etiquetas");
 
 
-        calcular.addEventListener("click", calcularMontos);
-        paseDia.addEventListener("load", mostrarDias);
-        pase2Dias.addEventListener("load", mostrarDias);
-        paseCompleto.addEventListener("load", mostrarDias);
+        $('#calcular').on("click", calcularMontos);
+
 
         setInterval(mostrarDias, 10);
         //validacion de datos de nombre apellido y email
 
-        nombre.addEventListener("blur", validarCampos);
-        apellido.addEventListener("blur", validarCampos);
-        email.addEventListener("blur", validarCampos);
-
         function validarCampos() {
             if (this.value == "") {
-                divError.style.display = "block";
-                divError.innerHTML = "Completa todos los campos";
+                $("#error").css({ 'display': 'block' });
+                $("#error").text("Completa todos los campos");
             } else {
-                divError.style.display = "none";
+                $("#error").css({ 'display': 'none' });
             }
         }
 
@@ -88,9 +80,11 @@
                 }
                 lista_Productos.style.display = "block";
                 lista_Productos.innerHTML = "";
-                for (var i = 0; i < listadoProductos.length; i++) {
+                //funcion for en jquery
+                $.each(listadoProductos, function(i, v) {
                     lista_Productos.innerHTML += listadoProductos[i] + "<br/>";
-                }
+                });
+
 
                 sumaTotal.innerHTML = "$ " + totalPagar.toFixed(2);
 
