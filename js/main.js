@@ -21,7 +21,7 @@
 
         //botones y divs
         var calcular = document.getElementById("calcular");
-        var errorDiv = document.getElementById("error");
+        var divError = document.getElementById("error");
         var btnRegisto = document.getElementById("btnRegistro");
         var lista_Productos = document.getElementById("listaProductos");
         var sumaTotal = document.getElementById("sumaTotal");
@@ -37,7 +37,18 @@
         paseCompleto.addEventListener("load", mostrarDias);
 
         setInterval(mostrarDias, 10);
+        //validacion de datos de nombre apellido y email
 
+        nombre.addEventListener("blur", function() {
+            if (this.value == "") {
+                divError.style.display = "block";
+                divError.innerHTML = "este campo es obligatorio";
+            }
+        })
+
+
+
+        //calculos y muestra de pedido
         function calcularMontos(event) {
             event.preventDefault();
             if (regalo.value === "") {
