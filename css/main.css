@@ -1078,6 +1078,7 @@ div.extras div.orden input {
 }
 
 div.extras div.orden select {
+    background-color: transparent;
     width: 100%;
     height: 45px;
     border-radius: 10px;
@@ -1085,10 +1086,10 @@ div.extras div.orden select {
 
 @media only screen and (min-width: 768px) {
     div.extras div.orden input {
-        width: 45%;
+        width: 30%;
     }
     div.extras div.orden select {
-        width: 45%;
+        width: 100%;
     }
 }
 
