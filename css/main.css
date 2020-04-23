@@ -1072,10 +1072,14 @@ div.resumen div.extras div.orden {
 div.extras div.orden input {
     margin: 10px 0 0 0;
     width: 80%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 div.extras div.orden select {
     width: 80%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
