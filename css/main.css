@@ -1101,7 +1101,13 @@ div.extras div.orden select {
 div.resumen div.total {
     padding: 30px;
     float: left;
-    width: 50%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    div.resumen div.total {
+        width: 50%;
+    }
 }
 
 div.resumen input {
@@ -1110,7 +1116,7 @@ div.resumen input {
 }
 
 #listaProductos {
-    width: 250px;
+    width: 100%;
     background-color: #e1e1e1;
     padding: 20px;
     font-weight: bold;
