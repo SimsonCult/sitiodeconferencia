@@ -826,8 +826,6 @@ blockquote p::before {
     color: #fe4918;
 }
 
-footer.info-testimonial {}
-
 footer.info-testimonial img {
     float: left;
     width: 20%;
