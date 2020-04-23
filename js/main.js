@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+    var regalo = document.getElementById("regalo");
     document.addEventListener('DOMContentLoaded', function() {
 
         //campos datos usuarios
@@ -16,8 +17,20 @@
 
         var calcular = document.getElementById("calcular");
         var errorDiv = document.getElementById("error");
-        var botonRegisto = document.getElementById("btnRegistro");
+        var btnRegisto = document.getElementById("btnRegistro");
         var resultado = document.getElementById("listaProductos");
+
+        calcular.addEventListener("click", calcularMontos);
+
+        function calcularMontos(event) {
+            event.preventDefault();
+            if (regalo.value === "") {
+                alert("Debes elegir un regalo");
+                regalo.focus();
+            } else {
+                console.log("ya elegiste regalo")
+            }
+        }
 
 
     });
