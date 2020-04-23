@@ -1,12 +1,18 @@
 $(function() {
 
+    //menu fijo arriba
+
+
+
+
+
     //letering para cambiar texto rapido
 
     $('.nombre-sitio').lettering();
 
 
 
-
+    //mostrar ocultar la parte de informacion
 
     $('div.ocultar:first').fadeIn();
     $('.menu-programa a:first').addClass('activo');
