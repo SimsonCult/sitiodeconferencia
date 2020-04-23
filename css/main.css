@@ -1131,6 +1131,24 @@ div.resumen input {
     color: #fe4918;
 }
 
+#error {
+    display: none;
+    clear: both;
+    background-color: rgba(255, 0, 0, .4);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+@media only screen and (min-width: 768px) {
+    #error {
+        margin-left: 25%;
+        width: 50%;
+    }
+}
+
 
 /* ==========================================================================
 Helper classes
