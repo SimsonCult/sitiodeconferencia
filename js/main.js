@@ -1,12 +1,12 @@
 (function() {
-    "use strick";
-
-    document.addEventListener("DOMcontentLoaded", function() {
-
-        console.log("listo");
+    'use strict';
+    document.addEventListener('DOMContentLoaded', function() {
 
 
+
+        alert("hola");
 
 
     });
+
 })();
