@@ -1,5 +1,12 @@
 $(function() {
 
+    //letering para cambiar texto rapido
+
+    $('.nombre-sitio').lettering();
+
+
+
+
 
     $('div.ocultar:first').fadeIn();
     $('.menu-programa a:first').addClass('activo');
