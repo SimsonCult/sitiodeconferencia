@@ -1,8 +1,23 @@
 $(function() {
 
     //menu fijo arriba
+    var windowHeigth = $(window).height(); //almacena el alto de la pantalla
+
+    var barraAltura = $('.barra').innerHeight(); //almacena la altura de la barra
 
 
+    $(window).scroll(function() {
+
+        var scroll = $(window).scrollTop(); //setecta el scroll
+        //validacion
+        if (scroll > windowHeigth) {
+            $('.barra').addClass('fixed');
+        } else {
+            $('.barra').removeClass('fixed');
+        }
+
+
+    });
 
 
 
