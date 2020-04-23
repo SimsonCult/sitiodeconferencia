@@ -136,6 +136,20 @@ html {
 
 /* sacado de la web https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 
+
+/****************************
+pagina activa
+*********************/
+
+.conferencia .navegacion-principal .activo {
+    border-bottom: 3px solid #fe4918;
+}
+
+.reservaciones .navegacion-principal .activo {
+    color: white;
+    border: 1px solid white;
+}
+
 body {
     background-color: #cccccc;
     font-family: var(--opensans);
@@ -1218,6 +1232,11 @@ div.resumen input {
         margin-left: 25%;
         width: 50%;
     }
+}
+
+div.galeria a {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 
