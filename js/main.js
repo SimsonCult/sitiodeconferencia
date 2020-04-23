@@ -20,11 +20,11 @@
         var paseCompleto = document.getElementById("paseCompleto");
 
         //botones y divs
-
         var calcular = document.getElementById("calcular");
         var errorDiv = document.getElementById("error");
         var btnRegisto = document.getElementById("btnRegistro");
-        var resultado = document.getElementById("listaProductos");
+        var lista_Productos = document.getElementById("listaProductos");
+        var sumaTotal = document.getElementById("sumaTotal");
 
         //extras
 
@@ -64,11 +64,13 @@
                 if (etiquetas >= 1) {
                     listadoProductos.push(etiquetas + " Etiqueta/as.");
                 }
+                lista_Productos.style.display = "block";
+                lista_Productos.innerHTML = "";
+                for (var i = 0; i < listadoProductos.length; i++) {
+                    lista_Productos.innerHTML += listadoProductos[i] + "<br/>";
+                }
 
-                console.log(listadoProductos)
-
-
-
+                sumaTotal.innerHTML = "$ " + totalPagar.toFixed(2);
 
 
 
