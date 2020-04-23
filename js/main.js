@@ -39,13 +39,18 @@
         setInterval(mostrarDias, 10);
         //validacion de datos de nombre apellido y email
 
-        nombre.addEventListener("blur", function() {
+        nombre.addEventListener("blur", validarCampos);
+        apellido.addEventListener("blur", validarCampos);
+        email.addEventListener("blur", validarCampos);
+
+        function validarCampos() {
             if (this.value == "") {
                 divError.style.display = "block";
-                divError.innerHTML = "este campo es obligatorio";
+                divError.innerHTML = "Completa todos los campos";
+            } else {
+                divError.style.display = "none";
             }
-        })
-
+        }
 
 
         //calculos y muestra de pedido
