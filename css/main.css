@@ -1099,11 +1099,27 @@ div.extras div.orden select {
 
 div.resumen div.total {
     padding: 30px;
+    float: left;
+    width: 50%;
 }
 
 div.resumen input {
     display: block;
     margin: 10px auto;
+}
+
+#listaProductos {
+    background-color: #e1e1e1;
+    padding: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+#sumaTotal {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    color: #fe4918;
 }
 
 
