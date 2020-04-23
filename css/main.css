@@ -209,6 +209,7 @@ h3 {
     display: inline-block;
     transition: all .3s ease;
     border: 2px solid #fe4918;
+    border-radius: 5px;
 }
 
 .boton.hollow,
