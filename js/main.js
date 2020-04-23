@@ -27,11 +27,14 @@
         var sumaTotal = document.getElementById("sumaTotal");
 
         //extras
-
         var camisasElegidas = document.getElementById("camisaEvento");
         var etiquetasElejidas = document.getElementById("etiquetas");
 
+
         calcular.addEventListener("click", calcularMontos);
+        paseDia.addEventListener("blur", mostrarDias);
+        pase2Dias.addEventListener("blur", mostrarDias);
+        paseCompleto.addEventListener("blur", mostrarDias);
 
         function calcularMontos(event) {
             event.preventDefault();
@@ -77,6 +80,38 @@
             }
         }
 
+        function mostrarDias() {
+            var boletosDia = paseDia.value,
+                boleto2Dias = pase2Dias.value,
+                boletoCompleto = paseCompleto.value;
+
+            var diasElegidos = [];
+            if (boletosDia > 0) {
+                diasElegidos.push("viernes");
+            } else {
+                document.getElementById("viernes").style.display = "none";
+                document.getElementById("sabado").style.display = "none";
+                document.getElementById("domingo").style.display = "none";
+            }
+            if (boleto2Dias > 0) {
+                diasElegidos.push("viernes", "sabado");
+            } else {
+                document.getElementById("viernes").style.display = "none";
+                document.getElementById("sabado").style.display = "none";
+                document.getElementById("domingo").style.display = "none";
+            }
+            if (boletoCompleto > 0) {
+                diasElegidos.push("viernes", "sabado", "domingo");
+            } else {
+                document.getElementById("viernes").style.display = "none";
+                document.getElementById("sabado").style.display = "none";
+                document.getElementById("domingo").style.display = "none";
+            }
+            for (var i = 0; i < diasElegidos.length; i++) {
+                document.getElementById(diasElegidos[i]).style.display = "block";
+            }
+
+        }
 
     });
 
