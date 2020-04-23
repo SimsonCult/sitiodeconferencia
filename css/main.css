@@ -1110,6 +1110,7 @@ div.resumen input {
 }
 
 #listaProductos {
+    width: 250px;
     background-color: #e1e1e1;
     padding: 20px;
     font-weight: bold;
@@ -1117,6 +1118,7 @@ div.resumen input {
 }
 
 #sumaTotal {
+    width: 100%;
     font-weight: bold;
     text-align: center;
     font-size: 2em;
