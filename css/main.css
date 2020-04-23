@@ -974,8 +974,10 @@ fomr.registro label {
 }
 
 div#datosUsuarios input {
+    margin-top: 15px;
     border-radius: 10px;
     text-align: center;
+    width: 100%;
 }
 
 h4 {
