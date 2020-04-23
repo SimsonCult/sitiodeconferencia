@@ -1237,6 +1237,21 @@ div.resumen input {
 div.galeria a {
     display: inline-block;
     margin-bottom: 5px;
+    width: 48%;
+}
+
+@media only screen and (min-width: 450px) {
+    div.galeria a {
+        display: inline-block;
+        width: 24%;
+    }
+    div.galeria a img {
+        width: 25%;
+    }
+}
+
+div.galeria a img {
+    width: 100%;
 }
 
 
