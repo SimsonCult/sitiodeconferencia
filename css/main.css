@@ -973,6 +973,11 @@ fomr.registro label {
     font-weight: bold;
 }
 
+div#datosUsuarios input {
+    border-radius: 10px;
+    text-align: center;
+}
+
 h4 {
     text-align: center;
     text-transform: uppercase;
@@ -1007,8 +1012,34 @@ div.paquetes div.tabla-pecio input {
     margin: 10 px auto;
 }
 
-div.contenido-dia {
+.contenido-dia {
     padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .contenido-dia>div {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+.contenido-dia>div p {
+    text-align: left;
+}
+
+.contenido-dia>div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenido-dia>div input {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.contenido-dia>div label time {
+    color: #fe4918;
+    font-weight: bold;
 }
 
 
