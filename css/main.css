@@ -150,6 +150,9 @@ pagina activa
     border: 1px solid white;
 }
 
+
+/******************** gobales************************/
+
 body {
     background-color: #cccccc;
     font-family: var(--opensans);
@@ -472,6 +475,7 @@ div.logo img {
 
 nav.navegacion-principal {
     display: none;
+    width: 100%;
 }
 
 nav.navegacion-principal a {
