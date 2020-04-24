@@ -2,9 +2,8 @@ $(function() {
 
     //menu fijo arriba
     var windowHeigth = $(window).height(); //almacena el alto de la pantalla
-    windowHeigth = windowHeigth * 85.5 / 100;
+    windowHeigth = windowHeigth * 85.5 / 100; //indicamos que la altura del hero es del 85.5% y no la altura de la pantalla
     var barraAltura = $('.barra').innerHeight(); //almacena la altura de la barra
-
 
     $(window).scroll(function() {
 
@@ -18,8 +17,8 @@ $(function() {
             $('body').css({ 'margin-top': '0px' });
         }
 
-
     });
+
 
 
 
