@@ -264,7 +264,7 @@ div.hero {
     background-image: url(../img/encabezado.jpg);
     background-position: bottom center;
     background-size: cover;
-    height: 450px;
+    height: 85.5vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -455,6 +455,14 @@ div.logo img {
     div.logo {
         width: 33%;
     }
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 
