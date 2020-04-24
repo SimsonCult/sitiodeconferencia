@@ -2,7 +2,7 @@ $(function() {
 
     //menu fijo arriba
     var windowHeigth = $(window).height(); //almacena el alto de la pantalla
-
+    windowHeigth = windowHeigth * 85.5 / 100;
     var barraAltura = $('.barra').innerHeight(); //almacena la altura de la barra
 
 
@@ -12,8 +12,10 @@ $(function() {
         //validacion
         if (scroll > windowHeigth) {
             $('.barra').addClass('fixed');
+            $('body').css({ 'margin-top': barraAltura + 'px' });
         } else {
             $('.barra').removeClass('fixed');
+            $('body').css({ 'margin-top': '0px' });
         }
 
 
