@@ -25,12 +25,17 @@
         var lista_Productos = document.getElementById("listaProductos");
         var sumaTotal = document.getElementById("sumaTotal");
 
+        btnRegisto.disabled = true;
+        btnRegisto.style.opacity = ".5";
+
+
         //extras
         var camisasElegidas = document.getElementById("camisaEvento");
         var etiquetasElejidas = document.getElementById("etiquetas");
 
 
         $('#calcular').on("click", calcularMontos);
+
 
 
         setInterval(mostrarDias, 10);
@@ -88,7 +93,10 @@
 
                 sumaTotal.innerHTML = "$ " + totalPagar.toFixed(2);
 
+                btnRegisto.disabled = false;
+                btnRegisto.style.opacity = "1";
 
+                document.getElementById('total_pedido').value = totalPagar;
 
             }
         }
@@ -128,5 +136,7 @@
 
 
     });
+
+
 
 })();
