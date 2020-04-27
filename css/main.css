@@ -141,7 +141,7 @@ html {
 pagina activa
 *********************/
 
-.conferencia .navegacion-principal .activo {
+.navegacion-principal .activo {
     border-bottom: 3px solid #fe4918;
 }
 
@@ -728,7 +728,7 @@ div.invitado img:hover {
     -moz-filter: grayscale(0);
     -o-filter: grayscale(0);
     -ms-filter: grayscale(0);
-    scale: 1.1;
+    -webkit-transform: scale(1.1);
 }
 
 div.invitado p {
@@ -833,7 +833,7 @@ div.tabla-pecio {
 }
 
 div.tabla-pecio:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     border: 1px solid #fe4918;
     box-shadow: 0px 0px 50px #666;
 }
@@ -1246,13 +1246,18 @@ div.resumen input {
     }
 }
 
+
+/**************************************************************************************************************************************************
+***********************************************************************************conferencia**********************************************************
+**************************************************************************************************************************************************/
+
 div.galeria a {
     display: inline-block;
     margin-bottom: 5px;
     width: 48%;
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 768px) {
     div.galeria a {
         display: inline-block;
         width: 24%;
@@ -1264,6 +1269,60 @@ div.galeria a {
 
 div.galeria a img {
     width: 100%;
+}
+
+
+/**************************************************************************************************************************************************
+***********************************************************************************calendario**********************************************************
+**************************************************************************************************************************************************/
+
+div.calendario {
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+div.calendario h3 {
+    padding-top: 25px;
+    grid-column: 1 / 3;
+}
+
+div.calendario h3 i {
+    color: #fe4918;
+    font-size: 1.5em;
+}
+
+div.calendario div.dia {
+    width: 100%;
+    float: left;
+    border: 2px solid #d18d8d;
+    transition: all .3s ease;
+}
+
+div.calendario div.dia:hover {
+    background-color: #d18d8d;
+    -webkit-transform: scale(1.1);
+}
+
+@media only screen and (min-width: 768px) {
+    div.calendario {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    div.calendario h3 {
+        grid-column: 1 / 4;
+    }
+}
+
+div.dia p.titulo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+div.dia i {
+    color: #fe4918;
+    font-size: 1.5em;
 }
 
 
