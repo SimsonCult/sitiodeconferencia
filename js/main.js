@@ -5,6 +5,13 @@ $(function() {
     windowHeigth = windowHeigth * 85.5 / 100; //indicamos que la altura del hero es del 85.5% y no la altura de la pantalla
     var barraAltura = $('.barra').innerHeight(); //almacena la altura de la barra
 
+    ///marcar en que pagina estamos
+    $("body.conferencia .navegacion-principal a:contains('Conferencia')").addClass('activo');
+    $("body.calendario .navegacion-principal a:contains('Calendario')").addClass('activo');
+    $("body.invitados .navegacion-principal a:contains('Invitados')").addClass('activo');
+
+
+
     $(window).scroll(function() {
 
         var scroll = $(window).scrollTop(); //setecta el scroll
@@ -31,7 +38,6 @@ $(function() {
     //letering para cambiar texto rapido
 
     $('.nombre-sitio').lettering();
-
 
 
     //mostrar ocultar la parte de informacion
@@ -73,5 +79,11 @@ $(function() {
 
 
     });
+
+
+    ////color box
+
+
+    $('.invitado-info').colorbox({ inline: true });
 
 });
